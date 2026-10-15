@@ -1,0 +1,6 @@
+{
+  "name": "ZONEK — Business Launch Intelligence",
+  "description": "Explore business opportunities, compare locations and competition, and organise the research you need before making your next business decision.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

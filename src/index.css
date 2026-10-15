@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme {
+  --font-heading: 'Manrope', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --color-warm-ivory: #EAE6DE;
+  --color-editorial-blue: #226192;
+  --color-warm-orange: #EF8557;
+  --color-dark-ink: #202832;
+  --color-muted-grey: #707782;
+  --color-soft-border: #D9D5CD;
+  --color-success-green: #27845D;
+  --color-warning-amber: #B7791F;
+  --color-risk-red: #C74646;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #EAE6DE;
+  color: #202832;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6, .font-heading {
+  font-family: 'Manrope', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  letter-spacing: -0.022em;
+}
+
+/* Restrained realistic shadow with subtle blue undertone */
+.shadow-editorial {
+  box-shadow: 
+    0 1px 3px 0 rgba(34, 97, 146, 0.04),
+    0 8px 24px -4px rgba(34, 97, 146, 0.08),
+    0 24px 48px -12px rgba(34, 97, 146, 0.12);
+}
+
+.shadow-editorial-hover {
+  box-shadow: 
+    0 2px 6px 0 rgba(34, 97, 146, 0.06),
+    0 12px 32px -4px rgba(34, 97, 146, 0.11),
+    0 32px 64px -12px rgba(34, 97, 146, 0.16);
+}
+
+/* Subtle ivory card shadow */
+.shadow-subtle {
+  box-shadow: 0 1px 2px 0 rgba(32, 40, 50, 0.04), 0 4px 12px 0 rgba(32, 40, 50, 0.02);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.2s ease-out forwards;
+}
